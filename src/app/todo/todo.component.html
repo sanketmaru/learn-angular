@@ -1,0 +1,14 @@
+<div style="padding: 20px;"> 
+    <p>{{communityName}}</p>
+    <div>Todo Tasks</div>
+    
+    <div style="margin-top: 20px;">
+        <input type="text" #task/>
+        <button (click)="addTasks(task.value)">Add Tasks</button>
+
+        <ul><li *ngFor="let task of tasks">{{task}}</li></ul>
+    </div>    
+</div>
+
+
+
