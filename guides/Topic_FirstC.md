@@ -15,3 +15,8 @@ Component has component metadata which is
 * Event Binding
 
 ![](../src/assets/images/Angular_Component.png?raw=true)
+
+# Change Detector
+
+![](../src/assets/images/Change_Detector.png?raw=true)
+
