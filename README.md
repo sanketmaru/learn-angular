@@ -14,5 +14,6 @@ Install Latest [NodeJS](https://nodejs.org/en/)
 4. [First Component](http://github.com/sanketmaru/learn-angular/blob/master/guides/Topic_FirstC.md)
 5. [Angular Material](http://github.com/sanketmaru/learn-angular/blob/master/guides/Topic_Material.md)
 6. [Routing Basics](http://github.com/sanketmaru/learn-angular/blob/master/guides/Topic_Routing.md)
-7. [First Real Application](http://github.com/sanketmaru/learn-angular/blob/master/guides/Topic_App.md)
+
+
 
