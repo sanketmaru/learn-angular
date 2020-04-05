@@ -4,10 +4,10 @@ Install [CLI](https://cli.angular.io/) on local
 
 # Steps
 
-npm install -g @angular/cli
-ng new my-first-app
-cd my-first-app
-ng serve
+* npm install -g @angular/cli
+* ng new my-first-app
+* cd my-first-app
+* ng serve
 
 Above steps will install latest cli globally and you can check your first real application.
 
@@ -34,7 +34,7 @@ Setup Requires lot of work like :-
 
 #  Advanced/Daily Usage Commands
 
-3. ng generate component todo or ng g c todo // Create a todo component
+1. ng generate component todo or ng g c todo // Create a todo component
 2. ng g m todo // Generate a todo module
 3. ng g s todo-service // Generate a todo service
 4. ng build // builds your angular app

@@ -10,6 +10,7 @@ export class TodoComponent implements OnInit {
   communityName = 'Pune Developer Community';
   task: string;
   tasks: string[] = [];
+  image = 'https://repository-images.githubusercontent.com/24195339/87018c00-694b-11e9-8b5f-c34826306d36';
   constructor() { }
 
   ngOnInit(): void {
