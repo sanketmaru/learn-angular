@@ -9,3 +9,4 @@
     5. How to communicate between components.
     6. How to share data between modules.
     7. Using Webpack in Angular.
+    8. Using multiple `router-outlet` in single Angular Application.
