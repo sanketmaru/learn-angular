@@ -14,14 +14,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-
-import { TodoModule } from './todo/todo.module';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
+import { TextoverflowDirective } from './directives/textoverflow.directive';
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    DashboardComponent
+    DashboardComponent,
+    TextoverflowDirective
   ],
   imports: [
     BrowserModule,
@@ -35,6 +36,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatTooltipModule,
     AppRoutingModule
   ],
   providers: [],

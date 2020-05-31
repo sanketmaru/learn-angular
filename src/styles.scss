@@ -2,3 +2,17 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.ellipses {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
