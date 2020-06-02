@@ -1,5 +1,5 @@
-import { Directive, ElementRef, HostListener, Input, AfterViewInit } from '@angular/core';
-import { MatTooltip, TooltipVisibility } from '@angular/material/tooltip';
+import { AfterViewInit, Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Directive({
   selector: '[appTextoverflow]'
@@ -7,6 +7,7 @@ import { MatTooltip, TooltipVisibility } from '@angular/material/tooltip';
 export class TextoverflowDirective implements AfterViewInit {
   private el: ElementRef;
   @Input('appTextoverflow') tooltipElem: MatTooltip;
+  @Input() titleOverflow;
   constructor(el: ElementRef) {
     this.el = el;
   }
@@ -24,9 +25,14 @@ export class TextoverflowDirective implements AfterViewInit {
   }
 
   private checkOverflow() {
-    if (this.el.nativeElement.scrollWidth > this.el.nativeElement.offsetWidth) {
+    if (this.titleOverflow) {
       this.showTooltip();
-      // this.addEllipses();
+      return;
+    }
+    if (this.el.nativeElement.scrollWidth > this.el.nativeElement.offsetWidth) {
+      this.titleOverflow = true;
+      this.showTooltip();
+      this.addEllipses();
     } else {
       this.hideTooltip();
     }

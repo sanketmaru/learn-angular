@@ -6,7 +6,7 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a
-        [appTextoverflow]="tooltip"
+        [appTextoverflow]="tooltip" [titleOverflow]="dasbhboardOverflow"
         #tooltip="matTooltip"
         mat-list-item 
         routerLink="dashboard" 
@@ -15,7 +15,7 @@
         <span class="text">My New Learning Dashboard</span>
       </a>
       <a
-        [appTextoverflow]="todotooltip"
+        [appTextoverflow]="todotooltip" [titleOverflow]="todoOverflow"
         #todotooltip="matTooltip"  
         mat-list-item 
         routerLink="todo" 
